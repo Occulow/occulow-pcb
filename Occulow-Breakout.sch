@@ -7375,6 +7375,60 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SMA-JACK">
+<packages>
+<package name="SMA-JACK">
+<description>Layout for female SMA jack</description>
+<pad name="1" x="-2.54" y="2.54" drill="1.6" shape="square" rot="R90"/>
+<pad name="2" x="2.54" y="2.54" drill="1.6" shape="square" rot="R90"/>
+<pad name="3" x="2.54" y="-2.54" drill="1.6" shape="square" rot="R90"/>
+<pad name="4" x="-2.54" y="-2.54" drill="1.6" shape="square" rot="R90"/>
+<pad name="5" x="0" y="0" drill="1.5" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SMA-JACK-FEMALE">
+<description>SMA female jack connector. See 
+http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1814832&amp;DocType=Customer+Drawing&amp;DocLang=English
+
+http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982</description>
+<circle x="0" y="0" radius="1.524" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
+<pin name="RFH" x="0" y="-5.08" length="middle" rot="R90"/>
+<wire x1="3.556" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<pin name="GND1" x="5.08" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND2" x="7.62" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND3" x="10.16" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND4" x="12.7" y="-5.08" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMA-JACK">
+<description>Female SMA through-hole jack.
+
+http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1814832&amp;DocType=Customer+Drawing&amp;DocLang=English
+
+http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982</description>
+<gates>
+<gate name="G$1" symbol="SMA-JACK-FEMALE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="FEMALE" package="SMA-JACK">
+<connects>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND2" pad="2"/>
+<connect gate="G$1" pin="GND3" pad="3"/>
+<connect gate="G$1" pin="GND4" pad="4"/>
+<connect gate="G$1" pin="RFH" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7401,6 +7455,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="U$3" library="SMA-JACK" deviceset="SMA-JACK" device="FEMALE"/>
+<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7424,6 +7481,9 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND3" gate="1" x="259.08" y="10.16"/>
 <instance part="GND4" gate="1" x="274.32" y="10.16"/>
 <instance part="SUPPLY2" gate="G$1" x="248.92" y="68.58"/>
+<instance part="U$3" gate="G$1" x="327.66" y="170.18"/>
+<instance part="GND5" gate="1" x="345.44" y="160.02"/>
+<instance part="GND6" gate="1" x="340.36" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -7517,6 +7577,44 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="274.32" y1="27.94" x2="274.32" y2="12.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND1"/>
+<pinref part="U$3" gate="G$1" pin="GND2"/>
+<wire x1="332.74" y1="165.1" x2="335.28" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND3"/>
+<wire x1="335.28" y1="165.1" x2="337.82" y2="165.1" width="0.1524" layer="91"/>
+<junction x="335.28" y="165.1"/>
+<pinref part="U$3" gate="G$1" pin="GND4"/>
+<wire x1="337.82" y1="165.1" x2="340.36" y2="165.1" width="0.1524" layer="91"/>
+<junction x="337.82" y="165.1"/>
+<wire x1="340.36" y1="165.1" x2="345.44" y2="165.1" width="0.1524" layer="91"/>
+<junction x="340.36" y="165.1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="345.44" y1="165.1" x2="345.44" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND9"/>
+<wire x1="317.5" y1="149.86" x2="317.5" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="152.4" x2="320.04" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND8"/>
+<wire x1="320.04" y1="152.4" x2="325.12" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="152.4" x2="330.2" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="152.4" x2="332.74" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="152.4" x2="340.36" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="149.86" x2="320.04" y2="152.4" width="0.1524" layer="91"/>
+<junction x="320.04" y="152.4"/>
+<pinref part="U$1" gate="G$1" pin="GND7"/>
+<wire x1="325.12" y1="149.86" x2="325.12" y2="152.4" width="0.1524" layer="91"/>
+<junction x="325.12" y="152.4"/>
+<pinref part="U$1" gate="G$1" pin="GND6"/>
+<wire x1="330.2" y1="149.86" x2="330.2" y2="152.4" width="0.1524" layer="91"/>
+<junction x="330.2" y="152.4"/>
+<pinref part="U$1" gate="G$1" pin="GND5"/>
+<wire x1="332.74" y1="149.86" x2="332.74" y2="152.4" width="0.1524" layer="91"/>
+<junction x="332.74" y="152.4"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="340.36" y1="149.86" x2="340.36" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -7539,6 +7637,13 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="53.34" x2="274.32" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="53.34" x2="274.32" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RF"/>
+<pinref part="U$3" gate="G$1" pin="RFH"/>
+<wire x1="327.66" y1="149.86" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
