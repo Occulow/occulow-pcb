@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="8.0.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>Custom part for RN2903</description>
+<packages>
+<package name="RN2903">
+<description>Layout for RN2903</description>
+<smd name="34" x="-8.89" y="5.08" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="35" x="-8.89" y="3.81" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="36" x="-8.89" y="2.54" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="37" x="-8.89" y="1.27" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="38" x="-8.89" y="0" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="39" x="-8.89" y="-1.27" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="40" x="-8.89" y="-2.54" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="41" x="-8.89" y="-3.81" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="42" x="-8.89" y="-5.08" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="43" x="-8.89" y="-6.35" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="44" x="-8.89" y="-7.62" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="45" x="-8.89" y="-8.89" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="46" x="-8.89" y="-10.16" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="47" x="-8.89" y="-11.43" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="33" x="-8.89" y="6.35" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="32" x="-8.89" y="7.62" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="31" x="-8.89" y="8.89" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="30" x="-8.89" y="10.16" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="29" x="-8.89" y="11.43" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="28" x="-8.89" y="12.7" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="14" x="8.89" y="5.08" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="13" x="8.89" y="3.81" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="12" x="8.89" y="2.54" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="11" x="8.89" y="1.27" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="10" x="8.89" y="0" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="9" x="8.89" y="-1.27" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="8" x="8.89" y="-2.54" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="7" x="8.89" y="-3.81" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="6" x="8.89" y="-5.08" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="5" x="8.89" y="-6.35" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="4" x="8.89" y="-7.62" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="3" x="8.89" y="-8.89" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="2" x="8.89" y="-10.16" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="1" x="8.89" y="-11.43" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="15" x="8.89" y="6.35" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="16" x="8.89" y="7.62" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="17" x="8.89" y="8.89" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="18" x="8.89" y="10.16" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="19" x="8.89" y="11.43" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="20" x="8.89" y="12.7" dx="1.524" dy="1.016" layer="1" stop="no"/>
+<smd name="27" x="-3.81" y="13.97" dx="1.524" dy="1.016" layer="1" rot="R90" stop="no"/>
+<smd name="26" x="-2.54" y="13.97" dx="1.524" dy="1.016" layer="1" rot="R90" stop="no"/>
+<smd name="25" x="-1.27" y="13.97" dx="1.524" dy="1.016" layer="1" rot="R90" stop="no"/>
+<smd name="23" x="1.27" y="13.97" dx="1.524" dy="1.016" layer="1" rot="R90" stop="no"/>
+<smd name="24" x="0" y="13.97" dx="1.524" dy="1.016" layer="1" rot="R90" stop="no"/>
+<smd name="22" x="2.54" y="13.97" dx="1.524" dy="1.016" layer="1" rot="R90" stop="no"/>
+<smd name="21" x="3.81" y="13.97" dx="1.524" dy="1.016" layer="1" rot="R90" stop="no"/>
+<wire x1="-8.89" y1="13.97" x2="-8.89" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="-8.89" y1="-12.7" x2="8.89" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="8.89" y1="-12.7" x2="8.89" y2="13.97" width="0.127" layer="51"/>
+<wire x1="8.89" y1="13.97" x2="-8.89" y2="13.97" width="0.127" layer="51"/>
+<rectangle x1="-9.752" y1="-12.038" x2="-8.028" y2="-10.822" layer="29"/>
+<rectangle x1="-9.752" y1="-10.768" x2="-8.028" y2="-9.552" layer="29"/>
+<rectangle x1="-9.752" y1="-9.498" x2="-8.028" y2="-8.282" layer="29"/>
+<rectangle x1="-9.752" y1="-8.228" x2="-8.028" y2="-7.012" layer="29"/>
+<rectangle x1="-9.752" y1="-6.958" x2="-8.028" y2="-5.742" layer="29"/>
+<rectangle x1="-9.752" y1="-5.688" x2="-8.028" y2="-4.472" layer="29"/>
+<rectangle x1="-9.752" y1="-4.418" x2="-8.028" y2="-3.202" layer="29"/>
+<rectangle x1="-9.752" y1="-3.148" x2="-8.028" y2="-1.932" layer="29"/>
+<rectangle x1="-9.752" y1="-1.878" x2="-8.028" y2="-0.662" layer="29"/>
+<rectangle x1="-9.752" y1="-0.608" x2="-8.028" y2="0.608" layer="29"/>
+<rectangle x1="-9.752" y1="0.662" x2="-8.028" y2="1.878" layer="29"/>
+<rectangle x1="-9.752" y1="1.932" x2="-8.028" y2="3.148" layer="29"/>
+<rectangle x1="-9.752" y1="3.202" x2="-8.028" y2="4.418" layer="29"/>
+<rectangle x1="-9.752" y1="4.472" x2="-8.028" y2="5.688" layer="29"/>
+<rectangle x1="-9.752" y1="5.742" x2="-8.028" y2="6.958" layer="29"/>
+<rectangle x1="-9.752" y1="7.012" x2="-8.028" y2="8.228" layer="29"/>
+<rectangle x1="-9.752" y1="8.282" x2="-8.028" y2="9.498" layer="29"/>
+<rectangle x1="-9.752" y1="9.552" x2="-8.028" y2="10.768" layer="29"/>
+<rectangle x1="-9.752" y1="10.822" x2="-8.028" y2="12.038" layer="29"/>
+<rectangle x1="-9.752" y1="12.092" x2="-8.028" y2="13.308" layer="29"/>
+<rectangle x1="8.028" y1="8.282" x2="9.752" y2="9.498" layer="29"/>
+<rectangle x1="8.028" y1="9.552" x2="9.752" y2="10.768" layer="29"/>
+<rectangle x1="8.028" y1="10.822" x2="9.752" y2="12.038" layer="29"/>
+<rectangle x1="8.028" y1="12.092" x2="9.752" y2="13.308" layer="29"/>
+<rectangle x1="8.028" y1="3.202" x2="9.752" y2="4.418" layer="29"/>
+<rectangle x1="8.028" y1="4.472" x2="9.752" y2="5.688" layer="29"/>
+<rectangle x1="8.028" y1="5.742" x2="9.752" y2="6.958" layer="29"/>
+<rectangle x1="8.028" y1="7.012" x2="9.752" y2="8.228" layer="29"/>
+<rectangle x1="8.028" y1="-1.878" x2="9.752" y2="-0.662" layer="29"/>
+<rectangle x1="8.028" y1="-0.608" x2="9.752" y2="0.608" layer="29"/>
+<rectangle x1="8.028" y1="0.662" x2="9.752" y2="1.878" layer="29"/>
+<rectangle x1="8.028" y1="1.932" x2="9.752" y2="3.148" layer="29"/>
+<rectangle x1="8.028" y1="-6.958" x2="9.752" y2="-5.742" layer="29"/>
+<rectangle x1="8.028" y1="-5.688" x2="9.752" y2="-4.472" layer="29"/>
+<rectangle x1="8.028" y1="-4.418" x2="9.752" y2="-3.202" layer="29"/>
+<rectangle x1="8.028" y1="-3.148" x2="9.752" y2="-1.932" layer="29"/>
+<rectangle x1="8.028" y1="-12.038" x2="9.752" y2="-10.822" layer="29"/>
+<rectangle x1="8.028" y1="-10.768" x2="9.752" y2="-9.552" layer="29"/>
+<rectangle x1="8.028" y1="-9.498" x2="9.752" y2="-8.282" layer="29"/>
+<rectangle x1="8.028" y1="-8.228" x2="9.752" y2="-7.012" layer="29"/>
+<rectangle x1="2.948" y1="13.362" x2="4.672" y2="14.578" layer="29" rot="R90"/>
+<rectangle x1="1.678" y1="13.362" x2="3.402" y2="14.578" layer="29" rot="R90"/>
+<rectangle x1="0.408" y1="13.362" x2="2.132" y2="14.578" layer="29" rot="R90"/>
+<rectangle x1="-0.862" y1="13.362" x2="0.862" y2="14.578" layer="29" rot="R90"/>
+<rectangle x1="-2.132" y1="13.362" x2="-0.408" y2="14.578" layer="29" rot="R90"/>
+<rectangle x1="-3.402" y1="13.362" x2="-1.678" y2="14.578" layer="29" rot="R90"/>
+<rectangle x1="-4.672" y1="13.362" x2="-2.948" y2="14.578" layer="29" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RN2903">
+<description>LoraWAN Wireless module RN2903</description>
+<wire x1="-17.78" y1="27.94" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-25.4" x2="17.78" y2="27.94" width="0.254" layer="94"/>
+<wire x1="17.78" y1="27.94" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-25.4" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
+<pin name="GND10" x="-22.86" y="25.4" length="middle"/>
+<pin name="NC7" x="-22.86" y="22.86" length="middle"/>
+<pin name="TEST0" x="-22.86" y="20.32" length="middle"/>
+<pin name="TEST1" x="-22.86" y="17.78" length="middle"/>
+<pin name="RESET_N" x="-22.86" y="15.24" length="middle"/>
+<pin name="GND11" x="-22.86" y="12.7" length="middle"/>
+<pin name="VDD2" x="-22.86" y="10.16" length="middle"/>
+<pin name="GPIO0" x="-22.86" y="7.62" length="middle"/>
+<pin name="GPIO1" x="-22.86" y="5.08" length="middle"/>
+<pin name="GPIO2" x="-22.86" y="2.54" length="middle"/>
+<pin name="GPIO3" x="-22.86" y="0" length="middle"/>
+<pin name="GPIO4" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GPIO5" x="-22.86" y="-5.08" length="middle"/>
+<pin name="GND12" x="-22.86" y="-7.62" length="middle"/>
+<pin name="NC8" x="-22.86" y="-10.16" length="middle"/>
+<pin name="GPIO6" x="-22.86" y="-12.7" length="middle"/>
+<pin name="GPIO7" x="-22.86" y="-15.24" length="middle"/>
+<pin name="GPIO8" x="-22.86" y="-17.78" length="middle"/>
+<pin name="GPIO9" x="-22.86" y="-20.32" length="middle"/>
+<pin name="GND13" x="-22.86" y="-22.86" length="middle"/>
+<pin name="GND4" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="NC5" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="NC4" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="NC3" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="NC2" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="NC1" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="GPIO10" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="GPIO11" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="GND3" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD1" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO12" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="GPIO13" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND2" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="UART_RX" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="UART_TX" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="RESERVED2" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="RESERVED1" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="UART_CTS" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="UART_RTS" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="GND1" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="GND9" x="-7.62" y="33.02" length="middle" rot="R270"/>
+<pin name="GND8" x="-5.08" y="33.02" length="middle" rot="R270"/>
+<pin name="NC6" x="-2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="GND7" x="0" y="33.02" length="middle" rot="R270"/>
+<pin name="RF" x="2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="GND6" x="5.08" y="33.02" length="middle" rot="R270"/>
+<pin name="GND5" x="7.62" y="33.02" length="middle" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RN2903">
+<gates>
+<gate name="G$1" symbol="RN2903" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RN2903">
+<connects>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND10" pad="28"/>
+<connect gate="G$1" pin="GND11" pad="33"/>
+<connect gate="G$1" pin="GND12" pad="41"/>
+<connect gate="G$1" pin="GND13" pad="47"/>
+<connect gate="G$1" pin="GND2" pad="8"/>
+<connect gate="G$1" pin="GND3" pad="11"/>
+<connect gate="G$1" pin="GND4" pad="20"/>
+<connect gate="G$1" pin="GND5" pad="21"/>
+<connect gate="G$1" pin="GND6" pad="22"/>
+<connect gate="G$1" pin="GND7" pad="24"/>
+<connect gate="G$1" pin="GND8" pad="26"/>
+<connect gate="G$1" pin="GND9" pad="27"/>
+<connect gate="G$1" pin="GPIO0" pad="35"/>
+<connect gate="G$1" pin="GPIO1" pad="36"/>
+<connect gate="G$1" pin="GPIO10" pad="14"/>
+<connect gate="G$1" pin="GPIO11" pad="13"/>
+<connect gate="G$1" pin="GPIO12" pad="10"/>
+<connect gate="G$1" pin="GPIO13" pad="9"/>
+<connect gate="G$1" pin="GPIO2" pad="37"/>
+<connect gate="G$1" pin="GPIO3" pad="38"/>
+<connect gate="G$1" pin="GPIO4" pad="39"/>
+<connect gate="G$1" pin="GPIO5" pad="40"/>
+<connect gate="G$1" pin="GPIO6" pad="43"/>
+<connect gate="G$1" pin="GPIO7" pad="44"/>
+<connect gate="G$1" pin="GPIO8" pad="45"/>
+<connect gate="G$1" pin="GPIO9" pad="46"/>
+<connect gate="G$1" pin="NC1" pad="15"/>
+<connect gate="G$1" pin="NC2" pad="16"/>
+<connect gate="G$1" pin="NC3" pad="17"/>
+<connect gate="G$1" pin="NC4" pad="18"/>
+<connect gate="G$1" pin="NC5" pad="19"/>
+<connect gate="G$1" pin="NC6" pad="25"/>
+<connect gate="G$1" pin="NC7" pad="29"/>
+<connect gate="G$1" pin="NC8" pad="42"/>
+<connect gate="G$1" pin="RESERVED1" pad="4"/>
+<connect gate="G$1" pin="RESERVED2" pad="5"/>
+<connect gate="G$1" pin="RESET_N" pad="32"/>
+<connect gate="G$1" pin="RF" pad="23"/>
+<connect gate="G$1" pin="TEST0" pad="30"/>
+<connect gate="G$1" pin="TEST1" pad="31"/>
+<connect gate="G$1" pin="UART_CTS" pad="3"/>
+<connect gate="G$1" pin="UART_RTS" pad="2"/>
+<connect gate="G$1" pin="UART_RX" pad="7"/>
+<connect gate="G$1" pin="UART_TX" pad="6"/>
+<connect gate="G$1" pin="VDD1" pad="12"/>
+<connect gate="G$1" pin="VDD2" pad="34"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
