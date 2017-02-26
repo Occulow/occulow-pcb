@@ -7394,7 +7394,7 @@ http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;Do
 http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982</description>
 <circle x="0" y="0" radius="1.524" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
-<pin name="RFH" x="0" y="-5.08" length="middle" rot="R90"/>
+<pin name="RF" x="0" y="-5.08" length="middle" rot="R90"/>
 <wire x1="3.556" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
 <pin name="GND1" x="5.08" y="-5.08" length="middle" rot="R90"/>
 <pin name="GND2" x="7.62" y="-5.08" length="middle" rot="R90"/>
@@ -7419,7 +7419,58 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <connect gate="G$1" pin="GND2" pad="2"/>
 <connect gate="G$1" pin="GND3" pad="3"/>
 <connect gate="G$1" pin="GND4" pad="4"/>
-<connect gate="G$1" pin="RFH" pad="5"/>
+<connect gate="G$1" pin="RF" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="PIR">
+<packages>
+<package name="IRS-B210ST01">
+<description>Murata IRS-B210ST01 PIR sensor layout</description>
+<smd name="3" x="2.15" y="0.725" dx="0.6" dy="0.45" layer="1"/>
+<smd name="2" x="2.15" y="0" dx="0.6" dy="0.4" layer="1"/>
+<smd name="1" x="2.15" y="-0.725" dx="0.6" dy="0.45" layer="1"/>
+<smd name="4" x="-2.15" y="1.45" dx="0.6" dy="0.4" layer="1"/>
+<smd name="5" x="-2.15" y="-1.45" dx="0.6" dy="0.4" layer="1"/>
+<wire x1="-2.35" y1="2.35" x2="2.35" y2="2.35" width="0.127" layer="51"/>
+<wire x1="2.35" y1="2.35" x2="2.35" y2="-2.35" width="0.127" layer="51"/>
+<wire x1="2.35" y1="-2.35" x2="-2.35" y2="-2.35" width="0.127" layer="51"/>
+<wire x1="-2.35" y1="-2.35" x2="-2.35" y2="2.35" width="0.127" layer="51"/>
+<text x="-2.46" y="2.63" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.32" y="-3.84" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="IRS-B210ST01">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="VOUT" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<text x="-5.08" y="5.588" size="1.778" layer="94">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IRS-B210ST01">
+<description>Murata IRS-B210ST01 PIR sensor</description>
+<gates>
+<gate name="G$1" symbol="IRS-B210ST01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IRS-B210ST01">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 4 5"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7458,6 +7509,9 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <part name="U$3" library="SMA-JACK" deviceset="SMA-JACK" device="FEMALE"/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U$4" library="PIR" deviceset="IRS-B210ST01" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7484,6 +7538,9 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <instance part="U$3" gate="G$1" x="327.66" y="170.18"/>
 <instance part="GND5" gate="1" x="345.44" y="160.02"/>
 <instance part="GND6" gate="1" x="340.36" y="147.32"/>
+<instance part="GND7" gate="1" x="350.52" y="83.82"/>
+<instance part="GND8" gate="1" x="297.18" y="83.82"/>
+<instance part="U$4" gate="G$1" x="205.74" y="154.94"/>
 </instances>
 <busses>
 </busses>
@@ -7615,6 +7672,42 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="340.36" y1="149.86" x2="340.36" y2="152.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND4"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="347.98" y1="142.24" x2="350.52" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="142.24" x2="350.52" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND3"/>
+<wire x1="350.52" y1="119.38" x2="350.52" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="111.76" x2="350.52" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="93.98" x2="350.52" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="119.38" x2="350.52" y2="119.38" width="0.1524" layer="91"/>
+<junction x="350.52" y="119.38"/>
+<pinref part="U$1" gate="G$1" pin="GND2"/>
+<wire x1="347.98" y1="111.76" x2="350.52" y2="111.76" width="0.1524" layer="91"/>
+<junction x="350.52" y="111.76"/>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
+<wire x1="347.98" y1="93.98" x2="350.52" y2="93.98" width="0.1524" layer="91"/>
+<junction x="350.52" y="93.98"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND10"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="302.26" y1="142.24" x2="297.18" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="142.24" x2="297.18" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND11"/>
+<wire x1="297.18" y1="129.54" x2="297.18" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="109.22" x2="297.18" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="93.98" x2="297.18" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="129.54" x2="297.18" y2="129.54" width="0.1524" layer="91"/>
+<junction x="297.18" y="129.54"/>
+<pinref part="U$1" gate="G$1" pin="GND12"/>
+<wire x1="302.26" y1="109.22" x2="297.18" y2="109.22" width="0.1524" layer="91"/>
+<junction x="297.18" y="109.22"/>
+<pinref part="U$1" gate="G$1" pin="GND13"/>
+<wire x1="302.26" y1="93.98" x2="297.18" y2="93.98" width="0.1524" layer="91"/>
+<junction x="297.18" y="93.98"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -7642,8 +7735,36 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="RF"/>
-<pinref part="U$3" gate="G$1" pin="RFH"/>
+<pinref part="U$3" gate="G$1" pin="RF"/>
 <wire x1="327.66" y1="149.86" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LR_RX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART_RX"/>
+<wire x1="347.98" y1="109.22" x2="368.3" y2="109.22" width="0.1524" layer="91"/>
+<label x="358.14" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LR_TX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART_TX"/>
+<wire x1="347.98" y1="106.68" x2="368.3" y2="106.68" width="0.1524" layer="91"/>
+<label x="358.14" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LR_CTS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART_CTS"/>
+<wire x1="347.98" y1="99.06" x2="368.3" y2="99.06" width="0.1524" layer="91"/>
+<label x="358.14" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LR_RTS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART_RTS"/>
+<wire x1="347.98" y1="96.52" x2="368.3" y2="96.52" width="0.1524" layer="91"/>
+<label x="358.14" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

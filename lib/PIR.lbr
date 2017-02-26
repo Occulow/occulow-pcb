@@ -38,12 +38,12 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -57,49 +57,46 @@
 </layers>
 <library>
 <packages>
-<package name="SMA-JACK">
-<description>Layout for female SMA jack</description>
-<pad name="1" x="-2.54" y="2.54" drill="1.6" shape="square" rot="R90"/>
-<pad name="2" x="2.54" y="2.54" drill="1.6" shape="square" rot="R90"/>
-<pad name="3" x="2.54" y="-2.54" drill="1.6" shape="square" rot="R90"/>
-<pad name="4" x="-2.54" y="-2.54" drill="1.6" shape="square" rot="R90"/>
-<pad name="5" x="0" y="0" drill="1.5" shape="square"/>
+<package name="IRS-B210ST01">
+<description>Murata IRS-B210ST01 PIR sensor layout</description>
+<smd name="3" x="2.15" y="0.725" dx="0.6" dy="0.45" layer="1"/>
+<smd name="2" x="2.15" y="0" dx="0.6" dy="0.4" layer="1"/>
+<smd name="1" x="2.15" y="-0.725" dx="0.6" dy="0.45" layer="1"/>
+<smd name="4" x="-2.15" y="1.45" dx="0.6" dy="0.4" layer="1"/>
+<smd name="5" x="-2.15" y="-1.45" dx="0.6" dy="0.4" layer="1"/>
+<wire x1="-2.35" y1="2.35" x2="2.35" y2="2.35" width="0.127" layer="51"/>
+<wire x1="2.35" y1="2.35" x2="2.35" y2="-2.35" width="0.127" layer="51"/>
+<wire x1="2.35" y1="-2.35" x2="-2.35" y2="-2.35" width="0.127" layer="51"/>
+<wire x1="-2.35" y1="-2.35" x2="-2.35" y2="2.35" width="0.127" layer="51"/>
+<text x="-2.46" y="2.63" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.32" y="-3.84" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="SMA-JACK-FEMALE">
-<description>SMA female jack connector. See 
-http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1814832&amp;DocType=Customer+Drawing&amp;DocLang=English
-
-http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982</description>
-<circle x="0" y="0" radius="1.524" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
-<pin name="RF" x="0" y="-5.08" length="middle" rot="R90"/>
-<wire x1="3.556" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
-<pin name="GND1" x="5.08" y="-5.08" length="middle" rot="R90"/>
-<pin name="GND2" x="7.62" y="-5.08" length="middle" rot="R90"/>
-<pin name="GND3" x="10.16" y="-5.08" length="middle" rot="R90"/>
-<pin name="GND4" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<symbol name="IRS-B210ST01">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="VOUT" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<text x="-5.08" y="5.588" size="1.778" layer="94">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMA-JACK">
-<description>Female SMA through-hole jack.
-
-http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1814832&amp;DocType=Customer+Drawing&amp;DocLang=English
-
-http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982</description>
+<deviceset name="IRS-B210ST01">
+<description>Murata IRS-B210ST01 PIR sensor</description>
 <gates>
-<gate name="G$1" symbol="SMA-JACK-FEMALE" x="0" y="0"/>
+<gate name="G$1" symbol="IRS-B210ST01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="FEMALE" package="SMA-JACK">
+<device name="" package="IRS-B210ST01">
 <connects>
-<connect gate="G$1" pin="GND1" pad="1"/>
-<connect gate="G$1" pin="GND2" pad="2"/>
-<connect gate="G$1" pin="GND3" pad="3"/>
-<connect gate="G$1" pin="GND4" pad="4"/>
-<connect gate="G$1" pin="RF" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2 4 5"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
