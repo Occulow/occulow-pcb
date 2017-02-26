@@ -7448,15 +7448,17 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 </packages>
 <symbols>
 <symbol name="IRS-B210ST01">
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="VIN" x="10.16" y="2.54" length="middle" rot="R180"/>
-<pin name="VOUT" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="-10.16" y="2.54" length="middle"/>
+<pin name="VOUT" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GND3" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <text x="-5.08" y="5.588" size="1.778" layer="94">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="GND2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-10.16" y="-5.08" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7468,7 +7470,9 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <devices>
 <device name="" package="IRS-B210ST01">
 <connects>
-<connect gate="G$1" pin="GND" pad="2 4 5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND2" pad="4"/>
+<connect gate="G$1" pin="GND3" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="1"/>
 </connects>
@@ -7512,6 +7516,17 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$4" library="PIR" deviceset="IRS-B210ST01" device=""/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="100pF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="100pF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C1206" value="0.01uF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="0.1uF"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="100uF"/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R1206" value="619k"/>
 </parts>
 <sheets>
 <sheet>
@@ -7540,7 +7555,18 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <instance part="GND6" gate="1" x="340.36" y="147.32"/>
 <instance part="GND7" gate="1" x="350.52" y="83.82"/>
 <instance part="GND8" gate="1" x="297.18" y="83.82"/>
-<instance part="U$4" gate="G$1" x="205.74" y="154.94"/>
+<instance part="U$4" gate="G$1" x="246.38" y="157.48"/>
+<instance part="GND9" gate="1" x="266.7" y="144.78"/>
+<instance part="C4" gate="G$1" x="226.06" y="157.48"/>
+<instance part="C5" gate="G$1" x="215.9" y="157.48"/>
+<instance part="C6" gate="G$1" x="205.74" y="157.48"/>
+<instance part="C7" gate="G$1" x="195.58" y="157.48"/>
+<instance part="C8" gate="G$1" x="187.96" y="157.48"/>
+<instance part="C9" gate="G$1" x="180.34" y="157.48"/>
+<instance part="C10" gate="G$1" x="170.18" y="157.48"/>
+<instance part="GND10" gate="1" x="170.18" y="144.78"/>
+<instance part="SUPPLY3" gate="G$1" x="170.18" y="175.26"/>
+<instance part="R5" gate="G$1" x="170.18" y="167.64" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7605,6 +7631,11 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <wire x1="248.92" y1="55.88" x2="248.92" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="55.88" x2="248.92" y2="55.88" width="0.1524" layer="91"/>
 <junction x="248.92" y="55.88"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="170.18" y1="172.72" x2="170.18" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7708,6 +7739,42 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <wire x1="302.26" y1="93.98" x2="297.18" y2="93.98" width="0.1524" layer="91"/>
 <junction x="297.18" y="93.98"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="264.16" y1="154.94" x2="266.7" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="154.94" x2="266.7" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GND3"/>
+<wire x1="266.7" y1="152.4" x2="266.7" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="152.4" x2="266.7" y2="152.4" width="0.1524" layer="91"/>
+<junction x="266.7" y="152.4"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="152.4" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="152.4" x2="215.9" y2="152.4" width="0.1524" layer="91"/>
+<junction x="226.06" y="152.4"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="152.4" x2="205.74" y2="152.4" width="0.1524" layer="91"/>
+<junction x="215.9" y="152.4"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="152.4" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
+<junction x="205.74" y="152.4"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="152.4" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
+<junction x="195.58" y="152.4"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="152.4" x2="180.34" y2="152.4" width="0.1524" layer="91"/>
+<junction x="187.96" y="152.4"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
+<junction x="180.34" y="152.4"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="170.18" y1="152.4" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
+<junction x="170.18" y="152.4"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -7765,6 +7832,41 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <pinref part="U$1" gate="G$1" pin="UART_RTS"/>
 <wire x1="347.98" y1="96.52" x2="368.3" y2="96.52" width="0.1524" layer="91"/>
 <label x="358.14" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="160.02" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="160.02" x2="215.9" y2="160.02" width="0.1524" layer="91"/>
+<junction x="226.06" y="160.02"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="160.02" x2="205.74" y2="160.02" width="0.1524" layer="91"/>
+<junction x="215.9" y="160.02"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="160.02" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
+<junction x="205.74" y="160.02"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="160.02" x2="187.96" y2="160.02" width="0.1524" layer="91"/>
+<junction x="195.58" y="160.02"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="160.02" x2="180.34" y2="160.02" width="0.1524" layer="91"/>
+<junction x="187.96" y="160.02"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
+<junction x="180.34" y="160.02"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="160.02" x2="170.18" y2="162.56" width="0.1524" layer="91"/>
+<junction x="170.18" y="160.02"/>
+</segment>
+</net>
+<net name="PIR_OUT" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="VOUT"/>
+<wire x1="264.16" y1="160.02" x2="274.32" y2="160.02" width="0.1524" layer="91"/>
+<label x="266.7" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

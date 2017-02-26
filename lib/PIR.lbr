@@ -74,15 +74,17 @@
 </packages>
 <symbols>
 <symbol name="IRS-B210ST01">
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="VIN" x="10.16" y="2.54" length="middle" rot="R180"/>
-<pin name="VOUT" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="-10.16" y="2.54" length="middle"/>
+<pin name="VOUT" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GND3" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <text x="-5.08" y="5.588" size="1.778" layer="94">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="GND2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-10.16" y="-5.08" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -94,7 +96,9 @@
 <devices>
 <device name="" package="IRS-B210ST01">
 <connects>
-<connect gate="G$1" pin="GND" pad="2 4 5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND2" pad="4"/>
+<connect gate="G$1" pin="GND3" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="1"/>
 </connects>
