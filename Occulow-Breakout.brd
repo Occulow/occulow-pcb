@@ -144,14 +144,18 @@
 <wire x1="27.94" y1="30.48" x2="49.53" y2="30.48" width="0" layer="20"/>
 <wire x1="49.53" y1="30.48" x2="49.53" y2="0" width="0" layer="20"/>
 <wire x1="49.53" y1="0" x2="27.94" y2="0" width="0" layer="20"/>
-<wire x1="44.45" y1="50.8" x2="44.45" y2="36.83" width="0" layer="20"/>
-<wire x1="44.45" y1="36.83" x2="27.94" y2="36.83" width="0" layer="20"/>
-<wire x1="27.94" y1="36.83" x2="27.94" y2="50.8" width="0" layer="20"/>
-<wire x1="27.94" y1="50.8" x2="44.45" y2="50.8" width="0" layer="20"/>
+<wire x1="41.91" y1="50.8" x2="41.91" y2="35.56" width="0" layer="20"/>
+<wire x1="41.91" y1="35.56" x2="27.94" y2="35.56" width="0" layer="20"/>
+<wire x1="27.94" y1="35.56" x2="27.94" y2="50.8" width="0" layer="20"/>
+<wire x1="27.94" y1="50.8" x2="41.91" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="50.8" x2="25.4" y2="50.8" width="0" layer="20"/>
 <wire x1="25.4" y1="50.8" x2="25.4" y2="0" width="0" layer="20"/>
 <wire x1="25.4" y1="0" x2="0" y2="0" width="0" layer="20"/>
+<text x="29.36875" y="42.2275" size="0.6096" layer="21">PIR_OUT</text>
+<text x="31.115" y="39.6875" size="0.6096" layer="21">VCC</text>
+<text x="31.115" y="37.30625" size="0.6096" layer="21">GND</text>
+<text x="41.275" y="37.94125" size="1.016" layer="21" rot="R90">Occulow</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -3144,15 +3148,15 @@ design rules under a new name.</description>
 <element name="U$1" library="RN2903" package="RN2903" value="RN2903" x="12.85875" y="25.4"/>
 <element name="U$2" library="GridEye" package="AMG8833" value="AMG8833SMD" x="35.40125" y="16.03375" rot="R270"/>
 <element name="U$3" library="SMA-JACK" package="SMA-JACK" value="SMA-JACKFEMALE" x="14.12875" y="45.72"/>
-<element name="U$4" library="PIR" package="IRS-B210ST01" value="IRS-B210ST01" x="31.59125" y="46.51375"/>
-<element name="C10" library="rcl" package="C1206" value="100uF" x="42.38625" y="47.14875" rot="R270"/>
-<element name="R5" library="resistor" package="R1206" value="619k" x="38.57625" y="47.14875" rot="R270"/>
+<element name="U$4" library="PIR" package="IRS-B210ST01" value="IRS-B210ST01" x="31.4325" y="47.46625"/>
+<element name="C10" library="rcl" package="C1206" value="100uF" x="39.6875" y="47.3075" rot="R270"/>
+<element name="R5" library="resistor" package="R1206" value="619k" x="36.67125" y="47.3075" rot="R270"/>
 <element name="C11" library="rcl" package="C1206" value="10uF" x="4.28625" y="3.81" rot="R270"/>
-<element name="SL1" library="con-amp-quick" package="03P" value="" x="39.21125" y="40.16375">
-<attribute name="MF" value="" x="39.21125" y="40.16375" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="39.21125" y="40.16375" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="39.21125" y="40.16375" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="39.21125" y="40.16375" size="1.778" layer="27" display="off"/>
+<element name="SL1" library="con-amp-quick" package="03P" value="" x="35.40125" y="40.005" rot="R270">
+<attribute name="MF" value="" x="35.40125" y="40.005" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="35.40125" y="40.005" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="35.40125" y="40.005" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="35.40125" y="40.005" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SL2" library="con-amp-quick" package="05P" value="" x="35.40125" y="26.3525">
 <attribute name="MF" value="" x="35.40125" y="26.3525" size="1.778" layer="27" display="off"/>
@@ -3278,17 +3282,16 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="3"/>
 <contactref element="C10" pad="1"/>
 <contactref element="R5" pad="1"/>
-<wire x1="33.74125" y1="47.23875" x2="37.24425" y2="47.23875" width="0.4064" layer="1"/>
-<wire x1="37.24425" y1="47.23875" x2="38.57625" y2="48.57075" width="0.4064" layer="1"/>
-<wire x1="38.57625" y1="48.57075" x2="42.36425" y2="48.57075" width="0.4064" layer="1"/>
-<wire x1="42.36425" y1="48.57075" x2="42.38625" y2="48.54875" width="0.4064" layer="1"/>
+<wire x1="33.5825" y1="48.19125" x2="36.133" y2="48.19125" width="0.4064" layer="1"/>
+<wire x1="36.133" y1="48.19125" x2="36.67125" y2="48.7295" width="0.4064" layer="1"/>
+<wire x1="36.67125" y1="48.7295" x2="39.6655" y2="48.7295" width="0.4064" layer="1"/>
+<wire x1="39.6655" y1="48.7295" x2="39.6875" y2="48.7075" width="0.4064" layer="1"/>
 </signal>
 <signal name="PIR_OUT">
 <contactref element="U$4" pad="1"/>
 <contactref element="SL1" pad="1"/>
-<wire x1="33.74125" y1="45.78875" x2="34.85625" y2="45.78875" width="0.254" layer="1"/>
-<wire x1="34.85625" y1="45.78875" x2="36.67125" y2="43.97375" width="0.254" layer="1"/>
-<wire x1="36.67125" y1="43.97375" x2="36.67125" y2="40.16375" width="0.254" layer="1"/>
+<wire x1="33.5825" y1="46.74125" x2="33.5825" y2="44.36375" width="0.254" layer="1"/>
+<wire x1="33.5825" y1="44.36375" x2="35.40125" y2="42.545" width="0.254" layer="1"/>
 </signal>
 <signal name="GR_VCC">
 <contactref element="R1" pad="2"/>
@@ -3330,8 +3333,11 @@ design rules under a new name.</description>
 <signal name="PIR_VCC">
 <contactref element="R5" pad="2"/>
 <contactref element="SL1" pad="2"/>
-<wire x1="39.21125" y1="40.16375" x2="39.21125" y2="45.09175" width="0.4064" layer="1"/>
-<wire x1="39.21125" y1="45.09175" x2="38.57625" y2="45.72675" width="0.4064" layer="1"/>
+<wire x1="36.67125" y1="45.8855" x2="36.67125" y2="44.45" width="0.4064" layer="1"/>
+<wire x1="36.67125" y1="44.45" x2="37.62375" y2="43.4975" width="0.4064" layer="1"/>
+<wire x1="37.62375" y1="43.4975" x2="37.62375" y2="40.9575" width="0.4064" layer="1"/>
+<wire x1="37.62375" y1="40.9575" x2="36.67125" y2="40.005" width="0.4064" layer="1"/>
+<wire x1="36.67125" y1="40.005" x2="35.40125" y2="40.005" width="0.4064" layer="1"/>
 </signal>
 <signal name="LR_VCC">
 <contactref element="U$1" pad="12"/>
@@ -3361,20 +3367,18 @@ design rules under a new name.</description>
 <signal name="PIR_GND">
 <contactref element="U$4" pad="4"/>
 <contactref element="U$4" pad="5"/>
-<wire x1="29.44125" y1="47.96375" x2="29.44125" y2="45.06375" width="0.254" layer="1"/>
 <contactref element="U$4" pad="2"/>
 <contactref element="C10" pad="2"/>
-<wire x1="30.89125" y1="46.51375" x2="33.74125" y2="46.51375" width="0.254" layer="1"/>
 <contactref element="SL1" pad="3"/>
-<wire x1="35.08375" y1="46.51375" x2="37.7825" y2="43.815" width="0.254" layer="1"/>
-<wire x1="37.7825" y1="43.815" x2="37.7825" y2="39.0525" width="0.254" layer="1"/>
-<wire x1="37.7825" y1="39.0525" x2="38.735" y2="38.1" width="0.254" layer="1"/>
-<wire x1="38.735" y1="38.1" x2="39.6875" y2="38.1" width="0.254" layer="1"/>
-<wire x1="39.6875" y1="38.1" x2="41.75125" y2="40.16375" width="0.254" layer="1"/>
-<wire x1="41.75125" y1="45.11375" x2="41.75125" y2="40.16375" width="0.254" layer="1"/>
-<wire x1="30.89125" y1="46.51375" x2="29.44125" y2="47.96375" width="0.254" layer="1"/>
-<wire x1="33.74125" y1="46.51375" x2="35.08375" y2="46.51375" width="0.254" layer="1"/>
-<wire x1="42.38625" y1="45.74875" x2="41.75125" y2="45.11375" width="0.254" layer="1"/>
+<wire x1="29.2825" y1="46.01625" x2="29.2825" y2="48.91625" width="0.254" layer="1"/>
+<wire x1="29.2825" y1="48.91625" x2="31.09375" y2="48.91625" width="0.254" layer="1"/>
+<wire x1="31.09375" y1="48.91625" x2="32.54375" y2="47.46625" width="0.254" layer="1"/>
+<wire x1="32.54375" y1="47.46625" x2="33.5825" y2="47.46625" width="0.254" layer="1"/>
+<wire x1="39.6875" y1="45.9075" x2="39.6875" y2="40.005" width="0.254" layer="1"/>
+<wire x1="39.6875" y1="40.005" x2="37.1475" y2="37.465" width="0.254" layer="1"/>
+<wire x1="37.1475" y1="37.465" x2="35.40125" y2="37.465" width="0.254" layer="1"/>
+<wire x1="33.5825" y1="47.46625" x2="38.12875" y2="47.46625" width="0.254" layer="1"/>
+<wire x1="38.12875" y1="47.46625" x2="39.6875" y2="45.9075" width="0.254" layer="1"/>
 </signal>
 <signal name="LR_GND">
 <contactref element="U$1" pad="28"/>
