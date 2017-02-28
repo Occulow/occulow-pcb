@@ -8293,14 +8293,14 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <pinref part="SL1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="228.6" y1="93.98" x2="243.84" y2="93.98" width="0.1524" layer="91"/>
-<label x="233.68" y="93.98" size="1.778" layer="95"/>
-<pinref part="SL2" gate="G$1" pin="4"/>
-</segment>
-<segment>
 <wire x1="330.2" y1="66.04" x2="353.06" y2="66.04" width="0.1524" layer="91"/>
 <label x="342.9" y="66.04" size="1.778" layer="95"/>
 <pinref part="SL3" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<pinref part="SL2" gate="G$1" pin="5"/>
+<wire x1="228.6" y1="96.52" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
+<label x="233.68" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8432,9 +8432,9 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <label x="246.38" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SL2" gate="G$1" pin="5"/>
-<wire x1="228.6" y1="96.52" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
-<label x="233.68" y="96.52" size="1.778" layer="95"/>
+<wire x1="228.6" y1="93.98" x2="243.84" y2="93.98" width="0.1524" layer="91"/>
+<label x="233.68" y="93.98" size="1.778" layer="95"/>
+<pinref part="SL2" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="PIR_VCC" class="0">
