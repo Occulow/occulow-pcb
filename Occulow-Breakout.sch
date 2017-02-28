@@ -8326,7 +8326,7 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <wire x1="274.32" y1="53.34" x2="274.32" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="RF" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="RF"/>
 <pinref part="U$3" gate="G$1" pin="RF"/>
