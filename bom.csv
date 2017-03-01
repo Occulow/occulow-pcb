@@ -1,0 +1,12 @@
+Board Description:,"Breakout boards for PIR, grideye, and LoRa modules",,,,,
+Team number:,21,,,,,
+18-549 Bill of Materials,,,,,,
+Part IDs,Manufacturer ID,Quantity,Cost,Vendor,Purchasing Link,Notes
+"R1,R2,R3",311-10KERCT-ND,6,$0.10 ,Digikey,http://www.digikey.com/product-detail/en/yageo/RC1206JR-0710KL/311-10KERCT-ND/732156,10k resistor
+R4,311-20ERCT-ND,2,$0.10 ,Digikey,http://www.digikey.com/product-detail/en/yageo/RC1206JR-0720RL/311-20ERCT-ND/732196,20 ohm resistor
+R5,311-619KFRCT-ND,2,$0.10 ,Digikey,http://www.digikey.com/product-detail/en/yageo/RC1206FR-07619KL/311-619KFRCT-ND/731990,619k resistor
+"C1,C5",12066D106KAT2A,4,$0.23 ,Mouser,http://www.mouser.com/ProductDetail/AVX/12066D106KAT2A/?qs=sGAEpiMZZMs0AnBnWHyRQMaLe2bV4MePqXnRJ9SO13g%3d,10uF capacitor
+C2,1206YD155KAT2A,2,$0.28 ,Mouser,http://www.mouser.com/ProductDetail/AVX/12065G105ZAT2A/?qs=sGAEpiMZZMs0AnBnWHyRQIvPBLTbmANSUcNSQ9WcQg8%3d,1uF capacitor
+C3,12065G105ZAT2A,2,$1.12 ,Mouser,http://www.mouser.com/ProductDetail/AVX/1206YD155KAT2A/?qs=sGAEpiMZZMs0AnBnWHyRQGUHeVR2JIRAFIC0sTtpWAY%3d,1.5uF capacitor
+C4,12066D107MAT2A,2,$0.57 ,Mouser,http://www.mouser.com/ProductDetail/AVX/12066D107MAT2A/?qs=sGAEpiMZZMukHu%252bjC5l7YbUaqXAw8%2fbZfRnLmz%2fODqk%3d,100uF capacitor
+"SL1,SL2,SL3",PRT-00116,1,$1.50 ,Sparkfun,https://www.sparkfun.com/products/116,Breakaway headers

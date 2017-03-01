@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8021,9 +8021,9 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <part name="C3" library="rcl" deviceset="C-EU" device="C1206" value="1.5 uF"/>
 <part name="U$3" library="SMA-JACK" deviceset="SMA-JACK" device="FEMALE"/>
 <part name="U$4" library="PIR" deviceset="IRS-B210ST01" device=""/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="100uF"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="100uF"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R1206" value="619k"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="SL1" library="con-amp-quick" deviceset="M03" device=""/>
 <part name="SL2" library="con-amp-quick" deviceset="M05" device=""/>
 <part name="SL3" library="con-amp-quick" deviceset="M07" device=""/>
@@ -8046,9 +8046,9 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <instance part="C3" gate="G$1" x="274.32" y="33.02"/>
 <instance part="U$3" gate="G$1" x="327.66" y="170.18"/>
 <instance part="U$4" gate="G$1" x="193.04" y="157.48"/>
-<instance part="C10" gate="G$1" x="170.18" y="157.48"/>
+<instance part="C4" gate="G$1" x="170.18" y="157.48"/>
 <instance part="R5" gate="G$1" x="170.18" y="167.64" rot="R90"/>
-<instance part="C11" gate="G$1" x="284.48" y="119.38"/>
+<instance part="C5" gate="G$1" x="284.48" y="119.38"/>
 <instance part="SL1" gate="G$1" x="193.04" y="132.08"/>
 <instance part="SL2" gate="G$1" x="220.98" y="91.44"/>
 <instance part="SL3" gate="G$1" x="325.12" y="58.42"/>
@@ -8186,7 +8186,7 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <segment>
 <pinref part="U$4" gate="G$1" pin="VIN"/>
 <wire x1="182.88" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="160.02" x2="170.18" y2="162.56" width="0.1524" layer="91"/>
 <junction x="170.18" y="160.02"/>
@@ -8259,7 +8259,7 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VDD2"/>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="302.26" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="127" x2="284.48" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="127" x2="284.48" y2="152.4" width="0.1524" layer="91"/>
@@ -8298,7 +8298,7 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <wire x1="182.88" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="152.4" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
 <junction x="170.18" y="152.4"/>
 <label x="170.18" y="147.32" size="1.778" layer="95"/>
@@ -8326,7 +8326,7 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <pinref part="U$1" gate="G$1" pin="GND13"/>
 <wire x1="302.26" y1="93.98" x2="297.18" y2="93.98" width="0.1524" layer="91"/>
 <junction x="297.18" y="93.98"/>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="114.3" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="109.22" x2="297.18" y2="109.22" width="0.1524" layer="91"/>
 <label x="297.18" y="86.36" size="1.778" layer="95"/>
