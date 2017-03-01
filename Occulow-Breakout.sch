@@ -8274,14 +8274,14 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 </net>
 <net name="LR_RST_N" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="TEST1"/>
-<wire x1="302.26" y1="134.62" x2="287.02" y2="134.62" width="0.1524" layer="91"/>
-<label x="287.02" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="330.2" y1="63.5" x2="353.06" y2="63.5" width="0.1524" layer="91"/>
 <label x="342.9" y="63.5" size="1.778" layer="95"/>
 <pinref part="SL3" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="RESET_N"/>
+<wire x1="302.26" y1="132.08" x2="287.02" y2="132.08" width="0.1524" layer="91"/>
+<label x="287.02" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIR_GND" class="0">
