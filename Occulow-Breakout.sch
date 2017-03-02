@@ -491,13 +491,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="7" x="5.5" y="-3.05" dx="2.6" dy="0.8" layer="1" rot="R90"/>
 <smd name="14" x="-5.5" y="3.05" dx="2.6" dy="0.8" layer="1" rot="R90"/>
 <smd name="1" x="-5.5" y="-2.55" dx="3.6" dy="0.8" layer="1" rot="R90"/>
-<wire x1="-5.54" y1="-4" x2="5.54" y2="-4" width="0.127" layer="51"/>
-<wire x1="5.55" y1="-4" x2="5.54" y2="-4" width="0.127" layer="51"/>
-<wire x1="5.54" y1="-4" x2="5.54" y2="4" width="0.127" layer="51"/>
-<wire x1="5.54" y1="4" x2="-5.54" y2="4" width="0.127" layer="51"/>
-<wire x1="-5.54" y1="4" x2="-5.54" y2="-4" width="0.127" layer="51"/>
+<wire x1="-5.54" y1="-4" x2="5.54" y2="-4" width="0.127" layer="21"/>
+<wire x1="5.54" y1="-4" x2="5.54" y2="4" width="0.127" layer="21"/>
+<wire x1="5.54" y1="4" x2="-5.54" y2="4" width="0.127" layer="21"/>
+<wire x1="-5.54" y1="4" x2="-5.54" y2="-4" width="0.127" layer="21"/>
 <text x="-3.175" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.175" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0.7" y1="1.3" x2="0.7" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-1.3" x2="3.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-1.3" x2="3.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="1.3" x2="0.7" y2="1.3" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
