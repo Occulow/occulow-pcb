@@ -262,6 +262,142 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SAML21-TQFP32">
+<packages>
+<package name="TQFP32">
+<description>TQFP-32 package for microcontrollers</description>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<smd name="4" x="-4.1" y="0.4" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="1" x="-4.1" y="2.8" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="2" x="-4.1" y="2" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="3" x="-4.1" y="1.2" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="5" x="-4.1" y="-0.4" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="6" x="-4.1" y="-1.2" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="7" x="-4.1" y="-2" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="8" x="-4.1" y="-2.8" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="12" x="-0.4" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="9" x="-2.8" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="10" x="-2" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="11" x="-1.2" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="13" x="0.4" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="14" x="1.2" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="15" x="2" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="16" x="2.8" y="-4.1" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="17" x="4.1" y="-2.8" dx="1" dy="0.37" layer="1"/>
+<smd name="18" x="4.1" y="-2" dx="1" dy="0.37" layer="1"/>
+<smd name="19" x="4.1" y="-1.2" dx="1" dy="0.37" layer="1"/>
+<smd name="20" x="4.1" y="-0.4" dx="1" dy="0.37" layer="1"/>
+<smd name="21" x="4.1" y="0.4" dx="1" dy="0.37" layer="1"/>
+<smd name="22" x="4.1" y="1.2" dx="1" dy="0.37" layer="1"/>
+<smd name="23" x="4.1" y="2" dx="1" dy="0.37" layer="1"/>
+<smd name="24" x="4.1" y="2.8" dx="1" dy="0.37" layer="1"/>
+<smd name="25" x="2.8" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="26" x="2" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="27" x="1.2" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="28" x="0.4" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="29" x="-0.4" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="30" x="-1.2" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="31" x="-2" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="32" x="-2.8" y="4.1" dx="1" dy="0.37" layer="1" rot="R90"/>
+<circle x="-2.55" y="2.55" radius="0.4031125" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SAM-L21E">
+<description>Sam L21E Pinout</description>
+<wire x1="-30.48" y1="35.56" x2="30.48" y2="35.56" width="0.254" layer="94"/>
+<wire x1="30.48" y1="35.56" x2="30.48" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-35.56" x2="-30.48" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-35.56" x2="-30.48" y2="35.56" width="0.254" layer="94"/>
+<pin name="VDDANA" x="-33.02" y="27.94" length="short"/>
+<pin name="GND@1" x="-33.02" y="-30.48" length="short"/>
+<pin name="!RESET" x="-33.02" y="33.02" length="short"/>
+<pin name="VDDCORE" x="-33.02" y="12.7" length="short"/>
+<pin name="GND@2" x="-33.02" y="-33.02" length="short"/>
+<pin name="VSW" x="-33.02" y="17.78" length="short"/>
+<pin name="VDDIN" x="-33.02" y="22.86" length="short"/>
+<text x="-30.226" y="36.576" size="1.778" layer="95">&gt;NAME</text>
+<text x="-29.972" y="-38.1" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="PA00(XIN0/W0/SER1:0/TC2:0)" x="-33.02" y="-2.54" length="short"/>
+<pin name="PA01(XIN1/W1/SER1:1/TC2:1)" x="-33.02" y="-5.08" length="short"/>
+<pin name="PA02(XIN2/W2/AIN0/DAC)" x="-33.02" y="-7.62" length="short"/>
+<pin name="PA03(XIN3/W3/AIN1)" x="-33.02" y="-10.16" length="short"/>
+<pin name="PA04(AIN4/SER0:0/TC0:0)" x="-33.02" y="-12.7" length="short"/>
+<pin name="PA05(AIN5/SER0:1/TC0:1)" x="-33.02" y="-15.24" length="short"/>
+<pin name="PA06(AIN6/SER0:2/TC1:0)" x="-33.02" y="-17.78" length="short"/>
+<pin name="PA07(AIN6/SER0:3/TC1:1)" x="-33.02" y="-20.32" length="short"/>
+<pin name="PA08(I2C/NMI/AIN16/SER0:0+)" x="33.02" y="33.02" length="short" rot="R180"/>
+<pin name="PA09(I2C/AIN17/SER0:1+)" x="33.02" y="30.48" length="short" rot="R180"/>
+<pin name="PA10(AIN18/SER0:2+)" x="33.02" y="27.94" length="short" rot="R180"/>
+<pin name="PA11(AIN19/SER0:3+)" x="33.02" y="25.4" length="short" rot="R180"/>
+<pin name="PA14(XIN14/SER2:2+)" x="33.02" y="22.86" length="short" rot="R180"/>
+<pin name="PA15(XIN15/SER2:3+)" x="33.02" y="20.32" length="short" rot="R180"/>
+<pin name="PA16(I2C/XIN0/SER1:0+)" x="33.02" y="15.24" length="short" rot="R180"/>
+<pin name="PA17(I2C/XIN1/SER1:1+)" x="33.02" y="12.7" length="short" rot="R180"/>
+<pin name="PA18(XIN2/SER1:2+)" x="33.02" y="10.16" length="short" rot="R180"/>
+<pin name="PA19(XIN3/SER1:3+)" x="33.02" y="7.62" length="short" rot="R180"/>
+<pin name="PA22(I2C/XIN6/SER3:0+)" x="33.02" y="5.08" length="short" rot="R180"/>
+<pin name="PA23(I2C/XIN7/SER3:1+)" x="33.02" y="2.54" length="short" rot="R180"/>
+<pin name="PA24(XIN12/SER3:2+)" x="33.02" y="0" length="short" rot="R180"/>
+<pin name="PA25(XIN13/SER3:3+)" x="33.02" y="-2.54" length="short" rot="R180"/>
+<pin name="PA27(XIN15/GCLK_IO:0)" x="33.02" y="-10.16" length="short" rot="R180"/>
+<pin name="PA30(XIN10/TC1:0)" x="33.02" y="-17.78" length="short" rot="R180"/>
+<pin name="PA31(XIN11/TC1:1)" x="33.02" y="-20.32" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SAM-L21E">
+<description>SAM L21E Microcontroller</description>
+<gates>
+<gate name="G$1" symbol="SAM-L21E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP32">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="26"/>
+<connect gate="G$1" pin="GND@1" pad="10"/>
+<connect gate="G$1" pin="GND@2" pad="28"/>
+<connect gate="G$1" pin="PA00(XIN0/W0/SER1:0/TC2:0)" pad="1"/>
+<connect gate="G$1" pin="PA01(XIN1/W1/SER1:1/TC2:1)" pad="2"/>
+<connect gate="G$1" pin="PA02(XIN2/W2/AIN0/DAC)" pad="3"/>
+<connect gate="G$1" pin="PA03(XIN3/W3/AIN1)" pad="4"/>
+<connect gate="G$1" pin="PA04(AIN4/SER0:0/TC0:0)" pad="5"/>
+<connect gate="G$1" pin="PA05(AIN5/SER0:1/TC0:1)" pad="6"/>
+<connect gate="G$1" pin="PA06(AIN6/SER0:2/TC1:0)" pad="7"/>
+<connect gate="G$1" pin="PA07(AIN6/SER0:3/TC1:1)" pad="8"/>
+<connect gate="G$1" pin="PA08(I2C/NMI/AIN16/SER0:0+)" pad="11"/>
+<connect gate="G$1" pin="PA09(I2C/AIN17/SER0:1+)" pad="12"/>
+<connect gate="G$1" pin="PA10(AIN18/SER0:2+)" pad="13"/>
+<connect gate="G$1" pin="PA11(AIN19/SER0:3+)" pad="14"/>
+<connect gate="G$1" pin="PA14(XIN14/SER2:2+)" pad="15"/>
+<connect gate="G$1" pin="PA15(XIN15/SER2:3+)" pad="16"/>
+<connect gate="G$1" pin="PA16(I2C/XIN0/SER1:0+)" pad="17"/>
+<connect gate="G$1" pin="PA17(I2C/XIN1/SER1:1+)" pad="18"/>
+<connect gate="G$1" pin="PA18(XIN2/SER1:2+)" pad="19"/>
+<connect gate="G$1" pin="PA19(XIN3/SER1:3+)" pad="20"/>
+<connect gate="G$1" pin="PA22(I2C/XIN6/SER3:0+)" pad="21"/>
+<connect gate="G$1" pin="PA23(I2C/XIN7/SER3:1+)" pad="22"/>
+<connect gate="G$1" pin="PA24(XIN12/SER3:2+)" pad="23"/>
+<connect gate="G$1" pin="PA25(XIN13/SER3:3+)" pad="24"/>
+<connect gate="G$1" pin="PA27(XIN15/GCLK_IO:0)" pad="25"/>
+<connect gate="G$1" pin="PA30(XIN10/TC1:0)" pad="31"/>
+<connect gate="G$1" pin="PA31(XIN11/TC1:1)" pad="32"/>
+<connect gate="G$1" pin="VDDANA" pad="9"/>
+<connect gate="G$1" pin="VDDCORE" pad="27"/>
+<connect gate="G$1" pin="VDDIN" pad="30"/>
+<connect gate="G$1" pin="VSW" pad="29"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -273,6 +409,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
+<part name="U$1" library="SAML21-TQFP32" deviceset="SAM-L21E" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -283,6 +420,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
+<instance part="U$1" gate="G$1" x="121.92" y="106.68"/>
 </instances>
 <busses>
 </busses>
