@@ -4094,6 +4094,165 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-fet">
+<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+&lt;p&gt;
+Symbols changed according to IEC617&lt;p&gt; 
+All types, packages and assignment to symbols and pins checked&lt;p&gt;
+Package outlines partly checked&lt;p&gt;
+&lt;p&gt;
+JFET = junction FET&lt;p&gt;
+IGBT-x = insulated gate bipolar transistor&lt;p&gt;
+x=N: NPN; x=P: PNP&lt;p&gt;
+IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
+m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
+m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
+c: N=N-channel; P=P-Channel&lt;p&gt;
+GDSB: gate, drain, source, bulk&lt;p&gt;
+&lt;p&gt;
+by R. Vogg  15.March.2002</description>
+<packages>
+<package name="TO252">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
+TS-003</description>
+<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
+<wire x1="-3.973" y1="5.983" x2="3.973" y2="5.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-5.983" x2="-3.973" y2="-5.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-5.983" x2="-3.973" y2="5.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="5.983" x2="3.973" y2="-5.983" width="0.0508" layer="39"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="3" x="0" y="2.5" dx="5.4" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
+</package>
+<package name="TO251AA">
+<description>&lt;b&gt;I-Pak&lt;/b&gt; International Rectifier</description>
+<wire x1="-2.286" y1="-5.334" x2="-2.286" y2="-3.048" width="0.889" layer="51"/>
+<wire x1="0" y1="-5.334" x2="0" y2="-3.048" width="0.889" layer="51"/>
+<wire x1="2.286" y1="-5.334" x2="2.286" y2="-3.048" width="0.889" layer="51"/>
+<wire x1="-2.286" y1="-3.048" x2="-2.286" y2="-2.286" width="0.889" layer="21"/>
+<wire x1="0" y1="-3.048" x2="0" y2="-2.286" width="0.889" layer="21"/>
+<wire x1="2.286" y1="-3.048" x2="2.286" y2="-2.286" width="0.889" layer="21"/>
+<wire x1="-3.175" y1="0.127" x2="3.175" y2="0.127" width="0.254" layer="21"/>
+<wire x1="3.175" y1="0.127" x2="3.175" y2="5.588" width="0.254" layer="21"/>
+<wire x1="3.175" y1="5.588" x2="2.667" y2="6.096" width="0.254" layer="21"/>
+<wire x1="2.667" y1="6.096" x2="2.54" y2="6.096" width="0.254" layer="21"/>
+<wire x1="2.54" y1="6.096" x2="-2.54" y2="6.096" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="6.096" x2="-2.667" y2="6.096" width="0.254" layer="21"/>
+<wire x1="-2.667" y1="6.096" x2="-3.175" y2="5.588" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="5.588" x2="-3.175" y2="0.127" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="6.096" x2="-2.54" y2="6.858" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="6.858" x2="-1.651" y2="7.366" width="0.254" layer="21"/>
+<wire x1="-1.651" y1="7.366" x2="1.651" y2="7.366" width="0.254" layer="21"/>
+<wire x1="1.651" y1="7.366" x2="2.54" y2="6.858" width="0.254" layer="21"/>
+<wire x1="2.54" y1="6.858" x2="2.54" y2="6.096" width="0.254" layer="21"/>
+<pad name="1" x="-2.286" y="-5.334" drill="0.889" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-5.334" drill="0.889" shape="long" rot="R90"/>
+<pad name="3" x="2.286" y="-5.334" drill="0.889" shape="long" rot="R90"/>
+<smd name="4" x="0" y="4.445" dx="5.334" dy="6.223" layer="1"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="1.27" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.5588" y1="-2.286" x2="0.5588" y2="-1.524" layer="21"/>
+<rectangle x1="-0.4318" y1="-1.524" x2="0.4318" y2="0" layer="21"/>
+<rectangle x1="-2.8448" y1="-2.286" x2="-1.7272" y2="-1.524" layer="21"/>
+<rectangle x1="1.7272" y1="-2.286" x2="2.8448" y2="-1.524" layer="21"/>
+<rectangle x1="-2.7178" y1="-1.524" x2="-1.8542" y2="0" layer="21"/>
+<rectangle x1="1.8542" y1="-1.524" x2="2.7178" y2="0" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="P-MOSFET">
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="1.905" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="4.572" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="-1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="4.318" y="-0.254"/>
+<vertex x="3.302" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="0"/>
+<vertex x="1.524" y="0.762"/>
+<vertex x="1.524" y="-0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SPD30P06P" prefix="Q">
+<description>&lt;b&gt;SIPMOS(R) Power-Transistor&lt;/b&gt; P-Channel, Enhancement mode&lt;p&gt;
+Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3615/SPD_U30P06P.pdf</description>
+<gates>
+<gate name="G$1" symbol="P-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO252" package="TO252">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="TO251AA">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4123,6 +4282,8 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="T1" library="transistor-fet" deviceset="SPD30P06P" device="TO252" value="DMP3010LK3"/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4151,6 +4312,8 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <instance part="GND6" gate="1" x="220.98" y="83.82"/>
 <instance part="GND7" gate="1" x="210.82" y="147.32"/>
 <instance part="GND8" gate="1" x="215.9" y="160.02"/>
+<instance part="T1" gate="G$1" x="185.42" y="50.8"/>
+<instance part="SUPPLY2" gate="G$1" x="187.96" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -4293,6 +4456,11 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <wire x1="36.576" y1="84.074" x2="36.576" y2="86.36" width="0.1524" layer="91"/>
 <junction x="36.576" y="86.36"/>
 </segment>
+<segment>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<pinref part="T1" gate="G$1" pin="S"/>
+<wire x1="187.96" y1="60.96" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -4319,12 +4487,22 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <wire x1="218.44" y1="109.22" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
 <label x="228.6" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA08(I2C/NMI/AIN16/SER0:0+)"/>
+<wire x1="142.24" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
+<label x="147.32" y="96.52" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LR_TX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="UART_TX"/>
 <wire x1="218.44" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
 <label x="228.6" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA09(I2C/AIN17/SER0:1+)"/>
+<wire x1="142.24" y1="93.98" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
+<label x="147.32" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_CTS" class="0">
@@ -4333,12 +4511,22 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <wire x1="218.44" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
 <label x="228.6" y="99.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA10(AIN18/SER0:2+)"/>
+<wire x1="142.24" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
+<label x="147.32" y="91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LR_RTS" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="UART_RTS"/>
 <wire x1="218.44" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
 <label x="228.6" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA11(AIN19/SER0:3+)"/>
+<wire x1="142.24" y1="88.9" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
+<label x="147.32" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_VCC" class="0">
@@ -4357,12 +4545,31 @@ http://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-181483
 <junction x="154.94" y="127"/>
 <label x="154.94" y="152.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="T1" gate="G$1" pin="D"/>
+<wire x1="187.96" y1="45.72" x2="187.96" y2="40.64" width="0.1524" layer="91"/>
+<label x="187.96" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LR_RST_N" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="RESET_N"/>
 <wire x1="172.72" y1="132.08" x2="157.48" y2="132.08" width="0.1524" layer="91"/>
 <label x="157.48" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA14(XIN14/SER2:2+)"/>
+<wire x1="142.24" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
+<label x="147.32" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA30(XIN10/TC1:0)"/>
+<wire x1="142.24" y1="45.72" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="45.72" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="G"/>
+<wire x1="165.1" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
