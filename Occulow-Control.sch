@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9623,11 +9623,9 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
-<part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$2" library="RN2903" deviceset="RN2903" device=""/>
@@ -9656,6 +9654,12 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SL1" library="con-amp-quick" deviceset="M06" device=""/>
 <part name="L1" library="resistor" deviceset="L-US" device="L2012C" value="10uH"/>
+<part name="L2" library="resistor" deviceset="L-US" device="L2012C" value="10uH"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
+<part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9667,15 +9671,13 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="U$1" gate="G$1" x="109.22" y="63.5"/>
-<instance part="C1" gate="G$1" x="17.78" y="81.28"/>
+<instance part="C1" gate="G$1" x="12.7" y="81.28"/>
 <instance part="GND1" gate="1" x="73.66" y="20.32"/>
-<instance part="SUPPLY1" gate="G$1" x="27.94" y="93.98"/>
-<instance part="C2" gate="G$1" x="7.62" y="81.28"/>
+<instance part="SUPPLY1" gate="G$1" x="12.7" y="96.52"/>
 <instance part="C3" gate="G$1" x="36.576" y="81.534"/>
-<instance part="C4" gate="G$1" x="50.8" y="71.12"/>
-<instance part="C5" gate="G$1" x="43.18" y="71.12"/>
-<instance part="GND4" gate="1" x="46.736" y="58.166"/>
-<instance part="GND2" gate="1" x="12.192" y="57.15"/>
+<instance part="C4" gate="G$1" x="62.484" y="71.12"/>
+<instance part="C5" gate="G$1" x="56.134" y="71.12"/>
+<instance part="GND2" gate="1" x="12.7" y="57.15"/>
 <instance part="GND3" gate="1" x="36.576" y="58.166"/>
 <instance part="U$2" gate="G$1" x="195.58" y="116.84"/>
 <instance part="U$3" gate="G$1" x="198.12" y="170.18"/>
@@ -9702,7 +9704,13 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <instance part="SUPPLY6" gate="G$1" x="25.4" y="134.62"/>
 <instance part="GND11" gate="1" x="25.654" y="118.872"/>
 <instance part="SL1" gate="G$1" x="139.7" y="149.86" rot="R180"/>
-<instance part="L1" gate="G$1" x="60.96" y="81.28" rot="R270"/>
+<instance part="L1" gate="G$1" x="66.04" y="81.28" rot="R270"/>
+<instance part="L2" gate="G$1" x="20.32" y="91.44" rot="R270"/>
+<instance part="C7" gate="G$1" x="27.94" y="73.66"/>
+<instance part="GND12" gate="1" x="27.94" y="57.658"/>
+<instance part="C2" gate="G$1" x="46.736" y="81.534"/>
+<instance part="GND4" gate="1" x="59.436" y="63.246"/>
+<instance part="GND13" gate="1" x="46.736" y="63.246"/>
 </instances>
 <busses>
 </busses>
@@ -9717,28 +9725,6 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <wire x1="76.2" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
 <junction x="73.66" y="30.48"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="66.04" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="66.04" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="63.5" x2="46.736" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="46.736" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="46.736" y1="60.706" x2="46.736" y2="63.5" width="0.1524" layer="91"/>
-<junction x="46.736" y="63.5"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="76.2" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="76.2" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="71.12" x2="12.192" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="12.192" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="12.192" y1="59.69" x2="12.192" y2="71.12" width="0.1524" layer="91"/>
-<junction x="12.192" y="71.12"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -9854,28 +9840,46 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <wire x1="134.62" y1="152.4" x2="118.872" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="118.872" y1="152.4" x2="118.872" y2="148.59" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="27.94" y1="68.58" x2="27.94" y2="60.198" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="59.69" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="56.134" y1="66.04" x2="59.436" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="62.484" y1="66.04" x2="59.436" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="59.436" y1="66.04" x2="59.436" y2="65.786" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="46.736" y1="76.454" x2="46.736" y2="65.786" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDDIN"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="86.36" x2="36.576" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="36.576" y1="86.36" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="86.36" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="86.36" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
-<wire x1="27.94" y1="93.98" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
-<junction x="27.94" y="86.36"/>
-<pinref part="U$1" gate="G$1" pin="VDDANA"/>
-<wire x1="27.94" y1="91.44" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="91.44" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
-<junction x="27.94" y="91.44"/>
+<wire x1="12.7" y1="96.52" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="VDDIN"/>
+<wire x1="76.2" y1="86.36" x2="46.736" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="46.736" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="86.36" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="91.44" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
+<junction x="12.7" y="91.44"/>
+<junction x="12.7" y="86.36"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="91.44" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="36.576" y1="84.074" x2="36.576" y2="86.36" width="0.1524" layer="91"/>
-<junction x="36.576" y="86.36"/>
+<wire x1="46.736" y1="84.074" x2="46.736" y2="86.36" width="0.1524" layer="91"/>
+<junction x="46.736" y="86.36"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
@@ -9916,23 +9920,6 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 <wire x1="134.62" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="154.94" x2="132.08" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="VDDCORE"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="76.2" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="76.2" x2="46.736" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="46.736" y1="76.2" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="76.2" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
-<junction x="50.8" y="76.2"/>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="81.28" x2="46.736" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="46.736" y1="81.28" x2="46.736" y2="76.2" width="0.1524" layer="91"/>
-<junction x="46.736" y="76.2"/>
 </segment>
 </net>
 <net name="RF" class="0">
@@ -10289,7 +10276,36 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <segment>
 <pinref part="U$1" gate="G$1" pin="VSW"/>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="81.28" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="L2" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="VDDANA"/>
+<wire x1="27.94" y1="91.44" x2="36.576" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="36.576" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="91.44" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<junction x="27.94" y="91.44"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="36.576" y1="84.074" x2="36.576" y2="91.44" width="0.1524" layer="91"/>
+<junction x="36.576" y="91.44"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="81.28" x2="56.134" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="56.134" y1="81.28" x2="56.134" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VDDCORE"/>
+<wire x1="56.134" y1="76.2" x2="56.134" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="76.2" x2="62.484" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="62.484" y1="76.2" x2="56.134" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="62.484" y1="73.66" x2="62.484" y2="76.2" width="0.1524" layer="91"/>
+<junction x="62.484" y="76.2"/>
 </segment>
 </net>
 </nets>
