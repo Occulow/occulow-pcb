@@ -10708,7 +10708,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="172.72" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LR_GND" class="0">
+<net name="N!!" class="0">
 <segment>
 <wire x1="63.5" y1="121.92" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="GND11"/>
