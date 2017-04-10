@@ -9969,6 +9969,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="EXTRA_HDR" gate="G$1" pin="6"/>
 <wire x1="134.62" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="60.706" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
+<label x="165.1" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="196.088" y1="154.94" x2="196.088" y2="150.114" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="S"/>
+<wire x1="196.088" y1="150.114" x2="180.34" y2="150.114" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="150.114" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="T2" gate="G$1" pin="S"/>
+<wire x1="196.088" y1="150.114" x2="208.28" y2="150.114" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="150.114" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
+<junction x="196.088" y="150.114"/>
+<pinref part="T3" gate="G$1" pin="S"/>
+<wire x1="208.28" y1="150.114" x2="229.362" y2="150.114" width="0.1524" layer="91"/>
+<wire x1="229.362" y1="150.114" x2="229.362" y2="139.7" width="0.1524" layer="91"/>
+<junction x="208.28" y="150.114"/>
+<label x="195.58" y="154.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LR_VCC_CTL" class="0">
 <segment>
@@ -10257,26 +10277,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="81.28" x2="56.134" y2="81.28" width="0.1524" layer="91"/>
 <label x="63.5" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="196.088" y1="154.94" x2="196.088" y2="150.114" width="0.1524" layer="91"/>
-<pinref part="T1" gate="G$1" pin="S"/>
-<wire x1="196.088" y1="150.114" x2="180.34" y2="150.114" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="150.114" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G$1" pin="S"/>
-<wire x1="196.088" y1="150.114" x2="208.28" y2="150.114" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="150.114" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
-<junction x="196.088" y="150.114"/>
-<pinref part="T3" gate="G$1" pin="S"/>
-<wire x1="208.28" y1="150.114" x2="229.362" y2="150.114" width="0.1524" layer="91"/>
-<wire x1="229.362" y1="150.114" x2="229.362" y2="139.7" width="0.1524" layer="91"/>
-<junction x="208.28" y="150.114"/>
-<label x="195.58" y="154.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="60.706" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-<label x="165.1" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_RX_HDR" class="0">
