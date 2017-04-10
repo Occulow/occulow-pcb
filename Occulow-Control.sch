@@ -10070,9 +10070,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="124.46" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA09(I2C/AIN17/SER0:1+)"/>
-<wire x1="142.24" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
-<label x="144.78" y="93.98" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PA08(I2C/NMI/AIN16/SER0:0+)"/>
+<wire x1="142.24" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<label x="144.78" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GR_SCL_HDR" class="0">
@@ -10082,9 +10082,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="124.46" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA10(AIN18/SER0:2+)"/>
-<wire x1="142.24" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
-<label x="144.78" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PA09(I2C/AIN17/SER0:1+)"/>
+<wire x1="142.24" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="144.78" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GR_INT_HDR" class="0">
@@ -10094,9 +10094,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="124.46" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA11(AIN19/SER0:3+)"/>
-<label x="144.78" y="88.9" size="1.778" layer="95"/>
-<wire x1="160.02" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PA10(AIN18/SER0:2+)"/>
+<wire x1="142.24" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
+<label x="144.78" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GR_VCC_CTL" class="0">
@@ -10106,9 +10106,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="187.96" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA08(I2C/NMI/AIN16/SER0:0+)"/>
-<wire x1="142.24" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
-<label x="144.78" y="96.52" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PA11(AIN19/SER0:3+)"/>
+<label x="144.78" y="88.9" size="1.778" layer="95"/>
+<wire x1="160.02" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PA00" class="0">

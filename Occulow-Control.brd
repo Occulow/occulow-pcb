@@ -3999,37 +3999,31 @@ design rules under a new name.</description>
 </signal>
 <signal name="GR_SDA_HDR">
 <contactref element="GRIDEYE_HDR" pad="1"/>
-<contactref element="U$1" pad="12"/>
-<wire x1="21.8165" y1="16.872" x2="23.73" y2="16.872" width="0.254" layer="1"/>
-<wire x1="23.73" y1="16.872" x2="28.321" y2="21.463" width="0.254" layer="1"/>
-<wire x1="28.321" y1="21.463" x2="34.671" y2="21.463" width="0.254" layer="1"/>
-<wire x1="34.671" y1="21.463" x2="34.7345" y2="21.3995" width="0.254" layer="1"/>
+<wire x1="23.73" y1="16.872" x2="28.321" y2="21.463" width="0" layer="19" extent="1-16"/>
+<wire x1="28.321" y1="21.463" x2="34.671" y2="21.463" width="0" layer="19" extent="1-16"/>
+<wire x1="34.671" y1="21.463" x2="34.7345" y2="21.3995" width="0" layer="19" extent="1-16"/>
+<contactref element="U$1" pad="11"/>
+<wire x1="21.8165" y1="16.072" x2="23.73" y2="16.872" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GR_SCL_HDR">
 <contactref element="GRIDEYE_HDR" pad="2"/>
-<contactref element="U$1" pad="13"/>
-<wire x1="21.8165" y1="17.672" x2="23.768" y2="17.672" width="0.254" layer="1"/>
-<wire x1="23.768" y1="17.672" x2="28.194" y2="22.098" width="0.254" layer="1"/>
-<wire x1="28.194" y1="22.098" x2="32.893" y2="22.098" width="0.254" layer="1"/>
-<wire x1="32.893" y1="22.098" x2="34.7345" y2="23.9395" width="0.254" layer="1"/>
+<contactref element="U$1" pad="12"/>
+<wire x1="21.8165" y1="16.872" x2="34.7345" y2="23.9395" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GR_INT_HDR">
 <contactref element="GRIDEYE_HDR" pad="3"/>
-<contactref element="U$1" pad="14"/>
-<wire x1="21.8165" y1="18.472" x2="23.806" y2="18.472" width="0.254" layer="1"/>
-<wire x1="23.806" y1="18.472" x2="27.94" y2="22.606" width="0.254" layer="1"/>
-<wire x1="27.94" y1="22.606" x2="30.861" y2="22.606" width="0.254" layer="1"/>
-<wire x1="30.861" y1="22.606" x2="34.7345" y2="26.4795" width="0.254" layer="1"/>
+<contactref element="U$1" pad="13"/>
+<wire x1="21.8165" y1="17.672" x2="34.7345" y2="26.4795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GR_VCC_CTL">
 <contactref element="T2" pad="1"/>
-<contactref element="U$1" pad="11"/>
-<wire x1="21.8165" y1="16.072" x2="21.139" y2="16.072" width="0.254" layer="1"/>
-<wire x1="21.139" y1="16.072" x2="20.828" y2="16.383" width="0.254" layer="1"/>
-<wire x1="20.828" y1="16.383" x2="20.828" y2="20.447" width="0.254" layer="1"/>
+<wire x1="21.139" y1="16.072" x2="20.828" y2="16.383" width="0" layer="19" extent="1-16"/>
+<wire x1="20.828" y1="16.383" x2="20.828" y2="20.447" width="0" layer="19" extent="1-16"/>
 <wire x1="20.828" y1="20.447" x2="23.114" y2="22.733" width="0.254" layer="1"/>
 <wire x1="23.114" y1="22.733" x2="23.114" y2="24.531" width="0.254" layer="1"/>
 <wire x1="23.114" y1="24.531" x2="24.136" y2="25.553" width="0.254" layer="1"/>
+<contactref element="U$1" pad="14"/>
+<wire x1="20.828" y1="20.447" x2="21.8165" y2="18.472" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GR_VCC">
 <contactref element="R2" pad="2"/>
