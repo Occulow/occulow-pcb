@@ -11529,6 +11529,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="U$7" library="lite-trap" deviceset="MINI-LITE-TRAP" device=""/>
 <part name="U$6" library="Occulow" deviceset="LDO-3V-SOT23-5" device=""/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
+<part name="R8" library="resistor" deviceset="R-US_" device="R1206" value="10k"/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11586,6 +11588,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="U$7" gate="G$1" x="10.16" y="160.02"/>
 <instance part="U$6" gate="G$1" x="48.26" y="160.02"/>
 <instance part="C13" gate="G$1" x="28.194" y="152.4"/>
+<instance part="R8" gate="G$1" x="33.02" y="172.72" rot="R90"/>
+<instance part="SUPPLY3" gate="G$1" x="33.02" y="180.34"/>
 </instances>
 <busses>
 </busses>
@@ -11753,6 +11757,11 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 <wire x1="60.96" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="162.56" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="33.02" y1="177.8" x2="33.02" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LR_VCC_CTL" class="0">
@@ -12169,6 +12178,14 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="28.194" y1="162.56" x2="17.78" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="28.194" y1="154.94" x2="28.194" y2="162.56" width="0.1524" layer="91"/>
 <junction x="28.194" y="162.56"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="EN"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="157.48" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="157.48" x2="33.02" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
