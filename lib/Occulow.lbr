@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -84,6 +84,12 @@
 <text x="0.75" y="-1.8" size="0.4064" layer="25" rot="R180">&gt;NAME</text>
 <text x="0.85" y="2.15" size="0.4064" layer="25" rot="R180">&gt;VALUE</text>
 </package>
+<package name="TO-5">
+<circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
+<pad name="1" x="-1.75" y="-1.79" drill="0.6"/>
+<pad name="2" x="1.75" y="-1.79" drill="0.6"/>
+<pad name="3" x="1.75" y="1.79" drill="0.6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VREG-SOT23-5L">
@@ -100,6 +106,15 @@
 <text x="-7.62" y="-6.858" size="1.27" layer="94">&gt;VALUE</text>
 <text x="-7.62" y="-6.858" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="PAN-PIR-DIG">
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<pin name="VCC" x="5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="TRIG" x="5.08" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="5.08" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LDO-3V-SOT23-5">
@@ -114,6 +129,23 @@
 <connect gate="G$1" pin="NC" pad="4"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PANASONIC-PIR-DIG">
+<gates>
+<gate name="G$1" symbol="PAN-PIR-DIG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="TRIG" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

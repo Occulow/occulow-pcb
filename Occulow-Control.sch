@@ -11421,6 +11421,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <text x="0.75" y="-1.8" size="0.4064" layer="25" rot="R180">&gt;NAME</text>
 <text x="0.85" y="2.15" size="0.4064" layer="25" rot="R180">&gt;VALUE</text>
 </package>
+<package name="TO-5">
+<circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
+<pad name="1" x="-1.75" y="-1.79" drill="0.6"/>
+<pad name="2" x="1.75" y="-1.79" drill="0.6"/>
+<pad name="3" x="1.75" y="1.79" drill="0.6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VREG-SOT23-5L">
@@ -11437,6 +11443,15 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <text x="-7.62" y="-6.858" size="1.27" layer="94">&gt;VALUE</text>
 <text x="-7.62" y="-6.858" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="PAN-PIR-DIG">
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<pin name="VCC" x="5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="TRIG" x="5.08" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="5.08" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LDO-3V-SOT23-5">
@@ -11451,6 +11466,23 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="NC" pad="4"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PANASONIC-PIR-DIG">
+<gates>
+<gate name="G$1" symbol="PAN-PIR-DIG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="TRIG" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11535,12 +11567,15 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="FRAME4" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
+<part name="U$8" library="Occulow" deviceset="PANASONIC-PIR-DIG" device=""/>
+<part name="SL2" library="con-amp-quick" deviceset="M03" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="166.878" y="8.382" size="3.81" layer="91">18-549 Team 21</text>
-<text x="241.808" y="6.35" size="3.81" layer="91">2</text>
+<text x="241.808" y="6.35" size="3.81" layer="91">4</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -12546,10 +12581,35 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <plain>
 </plain>
 <instances>
+<instance part="FRAME4" gate="G$1" x="0" y="0"/>
+<instance part="FRAME4" gate="V" x="147.32" y="0"/>
+<instance part="U$8" gate="G$1" x="91.44" y="104.14"/>
+<instance part="SL2" gate="G$1" x="127" y="104.14" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="N$7" class="0">
+<segment>
+<pinref part="SL2" gate="G$1" pin="1"/>
+<pinref part="U$8" gate="G$1" pin="VCC"/>
+<wire x1="119.38" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="SL2" gate="G$1" pin="2"/>
+<pinref part="U$8" gate="G$1" pin="TRIG"/>
+<wire x1="119.38" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="SL2" gate="G$1" pin="3"/>
+<pinref part="U$8" gate="G$1" pin="GND"/>
+<wire x1="119.38" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
