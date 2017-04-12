@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11367,6 +11367,10 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <smd name="4" x="3" y="-2.5" dx="2.5" dy="1.4" layer="1"/>
 <smd name="2" x="3" y="1.5" dx="2.5" dy="1.4" layer="1"/>
 <smd name="3" x="-3" y="-2.5" dx="2.5" dy="1.4" layer="1"/>
+<wire x1="4" y1="-3.95" x2="-3.6" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-3.95" x2="-3.6" y2="2.95" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="2.95" x2="4" y2="2.95" width="0.127" layer="21"/>
+<wire x1="4" y1="2.95" x2="4" y2="-3.95" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
