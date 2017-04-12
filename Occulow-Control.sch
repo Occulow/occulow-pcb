@@ -11371,16 +11371,16 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </packages>
 <symbols>
 <symbol name="LITE-TRAP">
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <pin name="1" x="7.62" y="2.54" length="middle" rot="R180"/>
-<pin name="2" x="7.62" y="-2.54" length="middle" rot="R180"/>
+<pin name="2" x="7.62" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11393,6 +11393,60 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connects>
 <connect gate="G$1" pin="1" pad="1 2"/>
 <connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Occulow">
+<packages>
+<package name="SOT23-5L">
+<smd name="2" x="-1.15" y="0" dx="1.2" dy="0.6" layer="1" rot="R180"/>
+<smd name="3" x="-1.15" y="-0.95" dx="1.2" dy="0.6" layer="1" rot="R180"/>
+<smd name="1" x="-1.15" y="0.95" dx="1.2" dy="0.6" layer="1" rot="R180"/>
+<smd name="4" x="1.15" y="-0.95" dx="1.2" dy="0.6" layer="1" rot="R180"/>
+<smd name="5" x="1.15" y="0.95" dx="1.2" dy="0.6" layer="1" rot="R180"/>
+<wire x1="-0.8" y1="-1.5" x2="-0.8" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="1.5" x2="0.8" y2="1.5" width="0.127" layer="21"/>
+<wire x1="0.8" y1="1.5" x2="0.8" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-1.5" x2="-0.8" y2="-1.5" width="0.127" layer="21"/>
+<text x="0.75" y="-1.8" size="0.4064" layer="25" rot="R180">&gt;NAME</text>
+<text x="0.85" y="2.15" size="0.4064" layer="25" rot="R180">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="VREG-SOT23-5L">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="EN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="NC" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="5.588" size="1.27" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-6.858" size="1.27" layer="94">&gt;VALUE</text>
+<text x="-7.62" y="-6.858" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LDO-3V-SOT23-5">
+<gates>
+<gate name="G$1" symbol="VREG-SOT23-5L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5L">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11473,6 +11527,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="I2C_HDR" library="con-amp-quick" deviceset="M02" device=""/>
 <part name="U$7" library="lite-trap" deviceset="MINI-LITE-TRAP" device=""/>
+<part name="U$6" library="Occulow" deviceset="LDO-3V-SOT23-5" device=""/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -11502,8 +11558,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="GND9" gate="1" x="37.592" y="115.57"/>
 <instance part="SUPPLY5" gate="G$1" x="116.84" y="162.56"/>
 <instance part="GND10" gate="1" x="116.84" y="131.064"/>
-<instance part="SUPPLY6" gate="G$1" x="25.4" y="134.62"/>
-<instance part="GND11" gate="1" x="25.654" y="118.872"/>
+<instance part="SUPPLY6" gate="G$1" x="66.04" y="170.18"/>
+<instance part="GND11" gate="1" x="25.146" y="139.446"/>
 <instance part="L1" gate="G$1" x="66.04" y="81.28" rot="R270"/>
 <instance part="L2" gate="G$1" x="17.78" y="91.44" rot="R270"/>
 <instance part="C7" gate="G$1" x="27.94" y="73.66"/>
@@ -11515,7 +11571,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="H1" gate="G$1" x="35.56" y="5.08"/>
 <instance part="H2" gate="G$1" x="40.64" y="5.08"/>
 <instance part="H3" gate="G$1" x="45.72" y="5.08"/>
-<instance part="LR_CTL_HDR" gate="G$1" x="71.12" y="157.48"/>
+<instance part="LR_CTL_HDR" gate="G$1" x="83.82" y="162.56"/>
 <instance part="U$5" gate="G$1" x="58.42" y="129.54"/>
 <instance part="D1" gate="G$1" x="195.58" y="68.58"/>
 <instance part="R6" gate="G$1" x="195.58" y="55.88" rot="R90"/>
@@ -11527,7 +11583,9 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="JTAG_HDR" gate="G$1" x="139.7" y="149.86" rot="R180"/>
 <instance part="C11" gate="G$1" x="98.806" y="128.016" rot="R90"/>
 <instance part="I2C_HDR" gate="G$1" x="144.78" y="172.72" rot="R180"/>
-<instance part="U$7" gate="G$1" x="10.16" y="127"/>
+<instance part="U$7" gate="G$1" x="10.16" y="160.02"/>
+<instance part="U$6" gate="G$1" x="48.26" y="160.02"/>
+<instance part="C13" gate="G$1" x="28.194" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -11606,8 +11664,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </segment>
 <segment>
 <pinref part="LR_CTL_HDR" gate="G$1" pin="7"/>
-<wire x1="76.2" y1="167.64" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
-<label x="76.2" y="167.64" size="1.778" layer="95"/>
+<wire x1="88.9" y1="172.72" x2="96.52" y2="172.72" width="0.1524" layer="91"/>
+<label x="88.9" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -11621,10 +11679,19 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="108.712" y1="119.38" x2="108.712" y2="110.49" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="2"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="28.194" y1="147.32" x2="28.194" y2="145.034" width="0.1524" layer="91"/>
+<wire x1="28.194" y1="145.034" x2="25.146" y2="145.034" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="17.78" y1="124.46" x2="25.654" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="25.654" y1="124.46" x2="25.654" y2="121.412" width="0.1524" layer="91"/>
+<wire x1="25.146" y1="141.986" x2="25.146" y2="145.034" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="2"/>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+<wire x1="35.56" y1="160.02" x2="22.098" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="22.098" y1="160.02" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="25.146" y1="145.034" x2="22.098" y2="145.034" width="0.1524" layer="91"/>
+<wire x1="22.098" y1="145.034" x2="22.098" y2="160.02" width="0.1524" layer="91"/>
+<junction x="25.146" y="145.034"/>
+<junction x="22.098" y="160.02"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11682,10 +11749,10 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="116.84" y1="147.32" x2="116.84" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="1"/>
+<pinref part="U$6" gate="G$1" pin="VOUT"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
-<wire x1="17.78" y1="129.54" x2="25.4" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="129.54" x2="25.4" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="162.56" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LR_VCC_CTL" class="0">
@@ -11997,8 +12064,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </segment>
 <segment>
 <pinref part="LR_CTL_HDR" gate="G$1" pin="5"/>
-<wire x1="76.2" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
-<label x="76.2" y="162.56" size="1.778" layer="95"/>
+<wire x1="88.9" y1="167.64" x2="96.52" y2="167.64" width="0.1524" layer="91"/>
+<label x="88.9" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_TX_HDR" class="0">
@@ -12009,8 +12076,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </segment>
 <segment>
 <pinref part="LR_CTL_HDR" gate="G$1" pin="4"/>
-<wire x1="76.2" y1="160.02" x2="83.82" y2="160.02" width="0.1524" layer="91"/>
-<label x="76.2" y="160.02" size="1.778" layer="95"/>
+<wire x1="88.9" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
+<label x="88.9" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_CTS_HDR" class="0">
@@ -12021,8 +12088,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </segment>
 <segment>
 <pinref part="LR_CTL_HDR" gate="G$1" pin="3"/>
-<wire x1="76.2" y1="157.48" x2="83.82" y2="157.48" width="0.1524" layer="91"/>
-<label x="76.2" y="157.48" size="1.778" layer="95"/>
+<wire x1="88.9" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
+<label x="88.9" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_RTS_HDR" class="0">
@@ -12033,8 +12100,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </segment>
 <segment>
 <pinref part="LR_CTL_HDR" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="154.94" x2="83.82" y2="154.94" width="0.1524" layer="91"/>
-<label x="76.2" y="154.94" size="1.778" layer="95"/>
+<wire x1="88.9" y1="160.02" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
+<label x="88.9" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_RST_N_HDR" class="0">
@@ -12045,8 +12112,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </segment>
 <segment>
 <pinref part="LR_CTL_HDR" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
-<label x="76.2" y="152.4" size="1.778" layer="95"/>
+<wire x1="88.9" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
+<label x="88.9" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_VCC_HDR" class="0">
@@ -12057,8 +12124,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </segment>
 <segment>
 <pinref part="LR_CTL_HDR" gate="G$1" pin="6"/>
-<wire x1="76.2" y1="165.1" x2="83.82" y2="165.1" width="0.1524" layer="91"/>
-<label x="76.2" y="165.1" size="1.778" layer="95"/>
+<wire x1="88.9" y1="170.18" x2="96.52" y2="170.18" width="0.1524" layer="91"/>
+<label x="88.9" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GR_VCC_HDR" class="0">
@@ -12091,6 +12158,17 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="103.886" y1="128.016" x2="108.966" y2="128.016" width="0.1524" layer="91"/>
 <label x="105.156" y="128.27" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="1"/>
+<pinref part="U$6" gate="G$1" pin="VIN"/>
+<wire x1="35.56" y1="162.56" x2="28.194" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="28.194" y1="162.56" x2="17.78" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="28.194" y1="154.94" x2="28.194" y2="162.56" width="0.1524" layer="91"/>
+<junction x="28.194" y="162.56"/>
 </segment>
 </net>
 </nets>
